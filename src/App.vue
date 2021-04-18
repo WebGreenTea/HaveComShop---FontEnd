@@ -5,7 +5,7 @@
   >
     <div class="container">
       <router-link to="/" class="navbar-brand float-left"
-        >HaveCOM SHOP</router-link
+        >HaveCOMSHOP</router-link
       >
       <div class="collapse navbar-collapse topnav-right" id="navbarDropdown">
         <ul class="nav navbar-nav ml-auto" v-if="Inlogin">
