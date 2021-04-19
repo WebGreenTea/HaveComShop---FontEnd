@@ -19,7 +19,7 @@
               />
             </p>
             <br />
-            <div v-if="count != 0">
+            <div v-if="count > 0">
               <button class="btn btn-info mr-3 ml-3" @click="buyNow">ซื้อสินค้า</button>
               <button class="btn btn-secondary" @click="addtoCart">
                 เพิ่มไปยังรถเข็น

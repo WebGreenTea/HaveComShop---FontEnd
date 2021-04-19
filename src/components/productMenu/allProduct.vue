@@ -9,7 +9,7 @@
       >
         <div class="card" id="productArea">
           <img :src="product.img" alt="" />
-          <div class="card-body" v-if="product.count != 0">
+          <div class="card-body" v-if="product.count > 0">
             <h6 class="card-title">{{ product.PDname }}</h6>
             <h5 class="card-text" id="price">
               {{ product.price.toLocaleString() }} THB

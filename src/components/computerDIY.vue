@@ -405,9 +405,9 @@
                 class="col-lg-3"
                 v-for="(cpu, index) in showCPU"
                 :key="index"
-                @click="selCPU(cpu)"
+                
               >
-                <div class="card" v-if="cpu.count != 0">
+                <div class="card" v-if="cpu.count > 0" @click="selCPU(cpu)">
                   <img :src="cpu.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ cpu.PDname }}</h6>
@@ -421,6 +421,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="cpu.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ cpu.PDname }}</h6>
+                    <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -439,9 +446,9 @@
                 class="col-lg-3"
                 v-for="(mainboard, index) in showMainboard"
                 :key="index"
-                @click="selmainboard(mainboard)"
+                
               >
-                <div class="card" v-if="mainboard.count != 0">
+                <div class="card" v-if="mainboard.count > 0" @click="selmainboard(mainboard)">
                   <img :src="mainboard.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ mainboard.PDname }}</h6>
@@ -455,6 +462,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="mainboard.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ mainboard.PDname }}</h6>
+                   <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -473,9 +487,9 @@
                 class="col-lg-3"
                 v-for="(ram, index) in showRam"
                 :key="index"
-                @click="selRam(ram)"
+                
               >
-                <div class="card" v-if="ram.count != 0">
+                <div class="card" v-if="ram.count > 0" @click="selRam(ram)">
                   <img :src="ram.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ ram.PDname }}</h6>
@@ -489,6 +503,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="ram.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ ram.PDname }}</h6>
+                   <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -507,9 +528,9 @@
                 class="col-lg-3"
                 v-for="(vga, index) in showVGA"
                 :key="index"
-                @click="selVGA(vga)"
+                
               >
-                <div class="card" v-if="vga.count != 0">
+                <div class="card" v-if="vga.count > 0" @click="selVGA(vga)">
                   <img :src="vga.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ vga.PDname }}</h6>
@@ -523,6 +544,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="vga.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ vga.PDname }}</h6>
+                    <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -541,9 +569,9 @@
                 class="col-lg-3"
                 v-for="(storage, index) in showStorage"
                 :key="index"
-                @click="selStorage(storage)"
+                
               >
-                <div class="card" v-if="storage.count != 0">
+                <div class="card" v-if="storage.count > 0" @click="selStorage(storage)">
                   <img :src="storage.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ storage.PDname }}</h6>
@@ -557,6 +585,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="storage.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ storage.PDname }}</h6>
+                    <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -576,9 +611,9 @@
                 class="col-lg-3"
                 v-for="(psu, index) in showPSU"
                 :key="index"
-                @click="selPSU(psu)"
+                
               >
-                <div class="card" v-if="psu.count != 0">
+                <div class="card" v-if="psu.count > 0" @click="selPSU(psu)">
                   <img :src="psu.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ psu.PDname }}</h6>
@@ -592,6 +627,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="psu.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ psu.PDname }}</h6>
+                    <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -611,9 +653,9 @@
                 class="col-lg-3"
                 v-for="(Case, index) in showCase"
                 :key="index"
-                @click="selCase(Case)"
+                
               >
-                <div class="card" v-if="Case.count != 0">
+                <div class="card" v-if="Case.count > 0" @click="selCase(Case)">
                   <img :src="Case.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ Case.PDname }}</h6>
@@ -627,6 +669,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="Case.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ Case.PDname }}</h6>
+                    <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
@@ -646,9 +695,9 @@
                 class="col-lg-3"
                 v-for="(cooler, index) in showCooler"
                 :key="index"
-                @click="selCooler(cooler)"
+                
               >
-                <div class="card" v-if="cooler.count != 0">
+                <div class="card" v-if="cooler.count > 0" @click="selCooler(cooler)">
                   <img :src="cooler.img" alt="" />
                   <div class="card-body">
                     <h6 class="card-title">{{ cooler.PDname }}</h6>
@@ -662,6 +711,13 @@
                         style="max-width: 12%"
                       />
                     </h6>
+                  </div>
+                </div>
+                <div class="card" v-else>
+                  <img :src="cooler.img" alt="" />
+                  <div class="card-body">
+                    <h6 class="card-title">{{ cooler.PDname }}</h6>
+                    <h4 class="card-text text-danger" id="price">สินค้าหมด</h4>
                   </div>
                 </div>
               </div>
