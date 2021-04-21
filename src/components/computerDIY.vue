@@ -216,8 +216,8 @@
       <!--center-->
       <div class="col-md-2">
         <!--CPU-->
-        <div class="border border-secondary rounded mb-1" style="height: 106px">
-          <div v-if="selectCPU" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 106px">
+          <div v-if="selectCPU" class="ml-1" style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delCpu"
@@ -226,7 +226,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectCPU.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block">
               <h5 class="card-text" id="price">
                 {{ selectCPU.price.toLocaleString() }} THB
               </h5>
@@ -237,8 +237,8 @@
           </div>
         </div>
         <!--mainboard-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectMainboard" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectMainboard" class="ml-1" style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delMainboard"
@@ -247,7 +247,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectMainboard.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block">
               <h5 class="card-text" id="price">
                 {{ selectMainboard.price.toLocaleString() }} THB
               </h5>
@@ -258,8 +258,8 @@
           </div>
         </div>
         <!--ram-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectRam" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectRam" class="ml-1 " style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delRam"
@@ -268,7 +268,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectRam.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block" >
               <h5 class="card-text" id="price">
                 {{ selectRam.price.toLocaleString() }} THB
               </h5>
@@ -279,8 +279,8 @@
           </div>
         </div>
         <!--vga-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectVGA" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectVGA" class="ml-1" style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delVga"
@@ -289,7 +289,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectVGA.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block" >
               <h5 class="card-text" id="price">
                 {{ selectVGA.price.toLocaleString() }} THB
               </h5>
@@ -300,8 +300,8 @@
           </div>
         </div>
         <!--storage-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectStorage" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectStorage" class="ml-1" style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delStorage"
@@ -310,7 +310,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectStorage.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block" >
               <h5 class="card-text" id="price">
                 {{ selectStorage.price.toLocaleString() }} THB
               </h5>
@@ -321,8 +321,8 @@
           </div>
         </div>
         <!--psu-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectPSU" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectPSU" class="ml-1" style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delPsu"
@@ -331,7 +331,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectPSU.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block" >
               <h5 class="card-text" id="price">
                 {{ selectPSU.price.toLocaleString() }} THB
               </h5>
@@ -342,8 +342,8 @@
           </div>
         </div>
         <!--case-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectCase" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectCase" class="ml-1 " style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delCase"
@@ -352,7 +352,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectCase.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block" >
               <h5 class="card-text" id="price">
                 {{ selectCase.price.toLocaleString() }} THB
               </h5>
@@ -363,8 +363,8 @@
           </div>
         </div>
         <!--cooler-->
-        <div class="border border-secondary rounded mb-1" style="height: 116px">
-          <div v-if="selectCooler" class="ml-1" style="height: 100px">
+        <div class="border border-secondary rounded mb-1 overflow-auto" style="height: 116px">
+          <div v-if="selectCooler" class="ml-1" style="height: 100%">
             <button
               class="btn btn-danger float-right"
               @click="delCooler"
@@ -373,7 +373,7 @@
               X
             </button>
             <h6 class="card-title mb-1">{{ selectCooler.PDname }}</h6>
-            <div class="d-inline-block" style="height: 100px">
+            <div class="d-inline-block" >
               <h5 class="card-text" id="price">
                 {{ selectCooler.price.toLocaleString() }} THB
               </h5>
@@ -390,7 +390,7 @@
         <div
           class="tab-content border border-info"
           id="v-pills-tabContent"
-          style="height: 100%"
+          style="height: 950px"
         >
           <!--CPU-->
           <div
